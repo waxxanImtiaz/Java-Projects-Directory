@@ -1,0 +1,121 @@
+<div id="cont">
+    <div id="page">
+         <p class="h2"  class="header" style="cursor: default;"><strong>What is Java program?</strong></p>
+        <p  class="text-justify">
+            A java program can be defined as a set of objects that have methods and instance <br />variables and these objects communicate with each other.
+        </p>
+        <br />
+        <br />
+         <p  class="text-justify">
+         <strong>Object –</strong> Objects have states and behaviors. <br />Object oriented programming says that everything in this world is an object.
+             <br /><b>For example</b>, a person have state (name, color,height,nose,ears,hairs etc) and person have behaviors 
+             (to eat food, to walk, to run,to see etc).
+         </p>
+         
+         <br />
+        <br />
+          <p  class="text-justify">
+         <strong>Class –</strong> A collection of objects with same properties and functions known as class.
+         <br />A class is used to define characteristics of the objects. It is used as a model for creating different objects of same type.
+         <br /><b>For example</b>, a class Person can be used to define characteristics of a person.
+         <br />It can be used to create many objects of type Person such as Ali,Usman ,Amjad etc.
+         </p>
+         
+        <br />
+        <br />
+          <p  class="text-justify">
+              <strong>Instance variables:</strong> Each object has its own set of instance variables. <br />
+              Set of all instance variables of an objects is called its <b>state</b>.
+              <br />A class may contain many instance variables. 
+          </p>
+        
+          <br />
+        <br />
+          <p  class="text-justify">
+              <strong>Functions:</strong> An object can perform different tasks and actions. 
+              <br />The actions that can be performed by an object are known as <b>functions or methods</b>. 
+              <br />
+              <br /><b>Methods -</b> A method is basically a behaviour. A class can contain many methods. It is in methods where the logics are written, data is manipulated and all the actions are executed.  A class may contain many mathods.  
+          </p>
+           <br />
+     
+        
+         <p class="h2"  class="header" style="cursor: default;"><strong>Defining Our First Java Program</strong></p>
+        
+           <br />
+          <pre>
+	class Simple
+	{  
+		public static void main(String args[])
+		{  
+			System.out.println("Hello Java");  
+		}  
+	}
+        </pre>
+           
+        <ul  class="text-justify">
+            <li>You can see in above program <b>“public class HelloWorld”</b>. <br />
+                Here public is access modifier, <b>class</b> is a java keyword and <b>HelloWorld</b> is our java class name. </li>
+            <li>You will see the following line of code often:<br /> 
+                <ul style=""list-style-type: disc;">
+                    <li>public static void main( String args[] ) { …}</li>
+                </ul>
+                        
+            </li>
+            <li>About <b>main()</b><br />
+                <ul  style=""list-style-type: disc;">
+                    <li><b>“main”</b> is the function from which your program starts
+                    <ul style=""list-style-type: square;">
+                        <li>Why <b>public?</b> 
+                            <p class="text-justify">
+                                -> Since main method is called by the <b>JVM</b> that is why it is kept public so that it is accessible from outside.
+                                <b>Remember that</b> private methods are only accessible from within the class
+                            </p>
+                        </li>
+                            <li>Why <b>static?</b> 
+                            <p class="text-justify">
+                           -> Every Java program starts when the JRE (Java Run Time Environment) calls the main method of that program. 
+                            If main is not static then the JRE have to create an object of the class in which main method is present
+                            and call the main method on that object (In OOP based languages method are called using the name of object if they are not static). It is made static so that the JRE can call it without creating an object. 
+                            </p>
+                        </li>
+                        <li>Also to ensure that there is only one copy of the main method per class </li>   
+                        
+                    </ul>
+                    </li>
+                    <li>
+                        Why <b>void?</b><br />
+                        <ul style=""list-style-type: square;">
+                        <li>Why <b>public?</b> 
+                            <p class="text-justify">
+                                -> Indicates that main ( ) does not return anything.
+                            </p>
+                        </li>
+                        </ul>
+                    </li>
+                    <li>
+                        What is <b>String args[] ?</b><br />
+                        <ul style=""list-style-type: square;">
+                        <li>Why <b>public?</b> 
+                            <p class="text-justify">
+                                -> Way of specifying input
+                                (often called command-line arguments) at startup of application.     </p>
+                        </li>
+                        </ul>
+                    </li>
+                </ul>
+                
+            </li>
+            <li>What is <b>System.out.println("Hello world")?</b>
+                <ul style="list-style-type: square; "><li>
+                  <p class="text-justify">
+                      -> System.out.println() is a function, which is used to print text on screen.
+                     <br /> Here <strong>"Hello world"</strong> is the message, which will be print on screen.
+                      </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+ </div>
+  
+

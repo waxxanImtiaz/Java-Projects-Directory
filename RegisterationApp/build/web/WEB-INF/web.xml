@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>A</servlet-name>
+        <servlet-class>Registration.StudentReg</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CreateDatabase</servlet-name>
+        <servlet-class>Registration.CreateDatabase</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CourseReg</servlet-name>
+        <servlet-class>Registration.CourseReg</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>CreateDatabase</servlet-name>
+        <url-pattern>/CreateDatabase</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>A</servlet-name>
+        <url-pattern>/StudentReg</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CourseReg</servlet-name>
+        <url-pattern>/CourseReg</url-pattern>
+    </servlet-mapping>
+    
+    <context-param>
+        <param-name>driver</param-name>
+        <param-value>com.mysql.jdbc.Driver</param-value>
+    </context-param>
+    
+    <context-param>
+          <param-name>url</param-name>
+        <param-value>jdbc:mysql://localhost/registration</param-value>
+    </context-param>
+    
+    <context-param>
+        <param-name>userName</param-name>
+        <param-value>root</param-value>
+    </context-param>
+    
+    <context-param>
+        <param-name>password</param-name>
+        <param-value>12345</param-value>
+    </context-param>
+    
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

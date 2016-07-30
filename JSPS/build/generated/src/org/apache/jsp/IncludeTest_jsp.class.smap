@@ -1,0 +1,16 @@
+SMAP
+IncludeTest_jsp.java
+JSP
+*S JSP
+*F
++ 0 IncludeTest.jsp
+IncludeTest.jsp
++ 1 index.html
+index.html
+*L
+1,4:49
+1#1,8:52
+4#0,2:60
+6:62,3
+7,3:65
+*E

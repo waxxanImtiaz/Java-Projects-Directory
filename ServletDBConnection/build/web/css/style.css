@@ -1,0 +1,12 @@
+#body
+	{
+		margin: 0px;
+		padding: 0px;
+		background: #1B1B1B url(mini_sword.png) repeat;
+		font-family: 'Varela Round', sans-serif;
+		font-size: 11pt;
+		font-weight: 400;
+		background-image: url(aqlb_search_bar.png);
+		color: blue;
+	}
+

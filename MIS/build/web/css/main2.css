@@ -1,0 +1,428 @@
+/*#########ABDUL QAYYUM LAGHARI - IMTIAZ ALI WASSAN##########*/
+/* for registration form input*/
+input {
+    background-color: transparent;
+    border: 0px solid;
+    color: #000000;
+} 
+/* for registration button*/
+button {
+  color: #009;
+  border: 2px solid #009;
+  font-weight: bold;
+}
+/* main body of the pages*/
+body{
+	background-color:#000;
+	color:black;
+	font-size:18px;
+	margin:0;
+	font-family:Georgia, "Times New Roman", Times, serif;
+}
+h1{
+	font-weight:bold;
+	font-size:2.0em;
+	padding:4px 0 8px 0;
+	font-family:"Courier New", Courier, monospace ;
+}
+div.hr {
+	background-image: url('../img/footer_line.png');
+	background-repeat: no-repeat;
+	width: 716px;
+	height: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+div.hr hr {
+  display: none;
+}
+/*#################PAGE BLOCKS' IDS###################*/
+#megabg_container{
+	background-image:url('../img/main_bg.png');
+	background-position:center top;
+	background-repeat:repeat-y;
+		width:960px;
+		margin:0 auto;
+
+}
+#bg_container{
+	background-image:url('../img/test_bg.png');
+	background-position:center top;
+	background-repeat:no-repeat;
+	width:960px;
+	margin:0 auto;
+
+}
+#container{
+	width:780px;
+	margin:0 auto;
+	background-image:url(../img/body_right_bg.png.jpg);
+	background-position:right;
+	background-repeat:repeat;
+	height:auto;
+}
+#header
+{
+	background-position:center center;
+	background-repeat:repeat-x;
+	height:240px;	
+	
+}
+#header_text{
+	font-size:32px;
+	font-weight:bold;
+	margin-left:15px;
+}
+#menu_sword{
+	background-image:url('../img/menu_sword_bg.png');
+	height:27px;
+	width:780px;
+	white-space:nowrap;
+
+	float:left;
+}
+#body{
+	width:100%;
+	height:100%;
+/*	position:relative;
+	top:-55px;*/
+}
+#body-leftside{
+	float:left;
+	background-image:url(../img/body_right_bg.png.jpg);
+	width:560px;
+}
+#body-rightside{
+	float:right;
+	background-position:right top;
+	background-repeat:no-repeat;
+	width:165px;
+	padding:5px 50px 5px 5px;
+	font-size:0.8em;
+}
+#footer{
+	clear:both;
+	padding:0 10px 5px 5px;
+	height:50px;
+}
+
+#scroll_header{
+	font-family:"Charlemagne Std", "Times New Roman", Times, serif;
+	color:#481e00;
+	font-size:20px;
+	position:relative;
+	top:50px;
+}
+/*########## LINKS #############*/
+a img{
+	border: none; 
+}
+a:link {
+	color: #ffffff; 
+	text-decoration: underline;
+}
+a:visited{
+	color: #9e9e9e;
+	text-decoration: underline;
+}
+a:hover{
+	color: #fffb8e;
+	text-decoration:underline;
+}
+/*----------*/
+a.graformix:link {
+	color: #aeaeae; 
+	text-decoration: underline;
+	font-size:1.0em;
+}
+a.graformix:visited{
+	color: #aeaeae;
+	text-decoration: underline;
+	font-size:1.0em;	
+}
+a.graformix:hover{
+	color: #FFFFFF;
+	text-decoration:underline;
+	font-size:1.0em;	
+}
+/*---------------------------------*/
+div.menu_separator{
+	border:0px solid red;
+	background-image:url('../img/separator_bg.png');
+	background-position:center center;
+	background-repeat:no-repeat;
+	height:22px;
+	width:175px;
+	margin:20px 0 15px 35px;
+	vertical-align:middle;
+	text-align:center;
+}
+div.separator_text{
+	color: #694421;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size:17px;
+	margin:auto auto;
+	width:130px;
+}
+a.main_menu:link{
+	color: #694421;
+	margin:0px 0 10px 50px;
+	text-decoration: none;
+	display:block;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size:17px;
+}
+a.main_menu:visited{
+	color: #694421;
+	margin:0px 0 10px 50px;	
+	display:block;
+	text-decoration: none;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size:17px;
+}
+a.main_menu:hover{
+	display:block;
+	margin:0px 0 10px 50px;	
+	color: #902200;
+	text-decoration:underline;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size:17px;
+}
+/*---------------------------------*/
+a.low_menu:link{
+	color: #c0bfbf; 
+	text-decoration: none;
+	font-family: Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size:0.8em;
+	margin-right: 10px;
+}
+a.low_menu:visited{
+	color: #c0bfbf;
+	text-decoration: none;
+	font-family: Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size:0.8em;
+	margin-right: 10px;
+}
+a.low_menu:hover{
+	color: #e6e6e6;
+	text-decoration:underline;
+	font-family: Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size:0.8em;	
+	margin-right: 10px;
+}
+a.sword_menu:link{
+	background:transparent url('../img/sword_item_bg.png') repeat-x;
+	font-family:"Charlemagne Std", "Times New Roman", Times, serif;
+	font-size:14px;
+	font-weight:bold;
+	color:#3e3e3e;
+	cursor:pointer;
+	display:block;
+	padding:0 0px 10px 0px;
+	position:relative;
+	top:10px;
+	text-decoration:none;
+	z-index:10;
+}
+a.sword_menu:visited{
+	background:transparent url('../img/sword_item_bg.png') repeat-x;
+	font-family:"Charlemagne Std", "Times New Roman", Times, serif;
+	font-size:14px;
+	font-weight:bold;
+	color:#3e3e3e;
+	cursor:pointer;
+	display:block;
+	padding:0 0px 10px 0px;
+	position:relative;
+	top:10px;
+	text-decoration:none;
+	z-index:10;
+}
+a.sword_menu:hover{
+	background:transparent url('../img/sword_item_bg.png') repeat-x;
+	font-family:"Charlemagne Std", "Times New Roman", Times, serif;
+	font-size:14px;
+	font-weight:bold;
+	color:#111111;
+	cursor:pointer;
+	display:block;
+	padding:0 0px 10px 0px;
+	position:relative;
+	top:10px;
+	text-decoration:none;
+	z-index:10;
+}
+a.sword_menu:link span.shadow{
+	font-family:"Charlemagne Std", "Times New Roman", Times, serif;
+	font-size:14px;
+	position:absolute;
+	left:1px;
+	top:3px;
+	color:#FFFFFF;
+}
+a.sword_menu:visited span.shadow{
+	font-family:"Charlemagne Std", "Times New Roman", Times, serif;
+	font-size:14px;
+	position:absolute;
+	left:1px;
+	top:3px;
+	color:#FFFFFF;
+}
+a.sword_menu:hover span.shadow{
+	font-family:"Charlemagne Std", "Times New Roman", Times, serif;
+	font-size:14px;
+	position:absolute;
+	left:1px;
+	top:3px;
+	color:#FFFFFF;
+}
+/*---------------------------------*/
+.sword_menu_item{
+/*	display:inline;*/
+	background-image:url('../img/sword_item_bg.png');
+	height:21px;
+	width:120px;
+	white-space:nowrap;
+/*	overflow:hidden;*/
+}
+ul.diamond{
+	list-style-image:url('../img/li_diamond.png');
+/*	margin:0 0 0 10px;*/
+}
+li{
+	padding-left:10px;
+	padding-top:0px;
+	padding-bottom:10px;
+}
+.left{
+	float:left;
+	position:relative;
+	top:0px;
+}
+.right{
+	float:right;
+	position:relative;
+	top:0px;
+}
+.designedby{
+	float:right;
+	font-size:0.7em;
+	color:#009;
+	text-align:right;
+
+	margin:-10px 0 10px 0;
+}
+/*@@@@@@@@@@@@@@@@@*/
+.noscreen{
+	display:none;
+}
+span.tab-r {
+background:transparent url('../img/sword_item_right.png') no-repeat 100% 0pt;
+height:21px;
+position:absolute;
+right:-10px;
+top:0px;
+width:10px;
+}
+span.tab-l {
+background:transparent url('../img/sword_item_left.png') no-repeat 0pt;
+height:21px;
+left:-10px;
+position:absolute;
+top:0px;
+width:10px;
+}
+
+#tabs ul{
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	margin:0px 0px;
+	padding:0px;
+	border:0px none;
+	display:block;
+}
+#tabs{
+	margin:-7px 15px;
+	/*padding:0px 0pt 0pt;*/
+	border:0px none;
+	display:block;
+	position:static;
+	top:6px;
+	left:10px;
+}
+#tabs ul li{
+	float:left;
+	margin:0px 55px 0px 0px;
+	padding:0px;
+	display:list-item;
+}
+.text{
+	position:relative;
+	top:2px;
+}
+.center {
+	text-align: center;
+}
+.justify{
+	text-align:center;
+}
+/* start of CSS for menu images ******************************************************************************************************* */
+fac
+/* CSS Document */
+
+/***Style the unordered list with the class 'enlarge'***/
+ul.enlarge{
+list-style-type:none; /*remove the bullet point*/
+}
+ul.enlarge li{
+display:inline-block; /*places the images in a line*/
+position: relative; /*allows precise positioning of the popup image when used with position:absolute - see support section */
+z-index: 0; /*resets the stack order of the list items - we'll increase in step 4. See support section for more info*/
+margin:5px 20px 0 10px; /*space between the images*/
+}
+/***In the HTML in step one we placed the large image inside a <span>, now we move it off the page until it's required***/
+ul.enlarge span{
+position:absolute; /*see support section for more info on positioning*/
+left: -9999px; /*moves the span off the page, effectively hidding it from view*/
+}/***Note: This styling will apply to both the thumbnail and popup image, unless you override these styles in step five***/
+ul.enlarge img{
+/*give the thumbnails a frame*/
+background-color:#eae9d4; /*frame colour*/
+padding: 6px; /*frame size*/
+/*add a drop shadow to the frame*/
+-webkit-box-shadow: 0 0 6px rgba(132, 132, 132, .75);
+-moz-box-shadow: 0 0 6px rgba(132, 132, 132, .75);
+box-shadow: 0 0 6px rgba(132, 132, 132, .75);
+/*and give the corners a small curve*/
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+}
+ul.enlarge li:hover{
+z-index: 50; /*places the popups infront of the thumbnails, which we gave a z-index of 0 in step 1*/ 
+cursor:pointer; /*changes the cursor to a hand*/
+}
+/***We bring the large image back onto the page by reducing left from -9999px (set in step 2) to figures below***/ 
+ul.enlarge li:hover span{ /*positions the <span> when the <li> (which contains the thumbnail) is hovered*/ 
+top: -300px; /*the distance from the bottom of the thumbnail to the top of the popup image*/
+left: -20px; /*distance from the left of the thumbnail to the left of the popup image*/
+}
+/***To make it look neater we used :nth-child to set a different left distance for each image***/ 
+ul.enlarge li:hover:nth-child(2) span{
+left: -100px; 
+}
+ul.enlarge li:hover:nth-child(3) span{
+left: -200px; 
+}
+table tr:nth-child(even) {
+    background-color: #eee;
+}
+table tr:nth-child(odd) {
+    background-color: #fff ;
+}
+table th {
+    color: white;
+    background-color:black;
+}
+

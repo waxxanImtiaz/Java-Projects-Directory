@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+
+#aqlb_search {
+	clear: both;	
+	width: 970px;
+	height: 40px;
+    padding: 0 10px;
+	background: url(images/aqlb_search_bar.jpg) no-repeat;	
+}
+
+#aqlb_search #search_box {
+	float: right;
+	width: 230px;
+	height: 29px;
+	margin: 5px 60px 0 0;
+	background: url(images/aqlb_search.png) no-repeat;
+}
+
+#search_box form {
+	width: 230px;
+	height: 29px;
+	margin: 0;
+	padding: 0;
+}
+
+#searchfield {
+	height: 20px;
+	width: 185px;
+	padding: 6px 5px 3px 5px;
+	margin: 0;
+	color: #ffffff;
+	font-size: 12px;
+	font-variant: normal;
+	line-height: normal;
+	background: none;
+	border: none;	
+}
+
+#searchbutton {
+ 	height: 29px;
+	width: 30px;
+	margin: 0px;
+	padding: 6px 0 0 0;
+	cursor: pointer;
+	font-size: 12px;
+	text-align: center;
+	vertical-align: bottom;
+	white-space: pre;
+	background: none; 
+	border: none;
+}

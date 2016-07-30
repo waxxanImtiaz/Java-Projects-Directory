@@ -1,0 +1,181 @@
+What is java?
+Java is an object oriented programming language.
+Popularity of java
+Java came in 1995 to immediate popularity
+Before that, C and C++ dominated the software development
+compiled, no robust memory model, no garbage collector causes memory leakages, not great support of built in libraries
+Java brings together a great set of "programmer efficient" features
+Putting more work on the CPU to make things easier for the programmer.
+Java is an Object Oriented
+ Java is 99.99% object oriented.
+ Java uses a formal OOP type system that must be obeyed at compile-time and run-time.
+This is helpful for larger projects, where the structure helps keep the various parts consistent. Contrast to Perl, which has a more anything-goes feel.
+Portability of java
+Java programs are portable. It means “write once run anywhere”.
+Microsoft and Java
+Microsoft hates Java, since a Java program (portable) is not tied to any particular operating system. If Java is popular, then programs written in Java might promote non-Microsoft operating systems. For basically the same reason, all the nonMicrosoft vendors think Java is a great idea
+Microsoft's C# is very similar to Java, but with some improvements, and some questionable features added in, and it is not portable in the way Java is. Generally it is considered that C# will be successful in the way that Visual Basic is: a nice tool to build Microsoft only software.
+Microsoft has used its power to try to derail Java somewhat, but Java remains very popular on its merits.
+
+WORA (write once run anywhare)
+When you write a program in C++ it is known as source code. The C++ compiler converts this source code into the machine code of underlying system (e.g. Windows) If you want to run that code on Linux you need to recompile it with a Linux based compiler. Due to the difference in compilers, sometimes you need to modify your code.
+Java has introduced the concept of WORA (write once run anywhere). When you write a java program it is known as the source code of java. The java compiler does not compile this source code for any underlying hardware system, rather it compiles it for a software system known as JVM (This compiled code is known as byte code). We have different JVMs for different systems (such as JVM for Windows, JVM for Linux etc). When we run our program the JVM interprets (translates) the compiled program into the language understood by the underlying system. So we write our code once and the JVM runs it everywhere according to the underlying system.
+
+Java Byte Code
+Java programs (Source code) are compiled into a form called Java bytecodes.
+The Java compiler reads Java language source (.java) files, translates the source into Java bytecodes, and places the bytecodes into class (.class) files.
+The compiler generates one class file for each class contained in java source file.
+Java virtual machine(JVM)
+The central part of java platform is java virtual machine.
+Java bytecode executes by special software known as a "virtual machine".
+Most programming languages compile source code directly into machine code, suitable for execution
+The difference with Java is that it uses bytecode - a special type of machine code.
+The JVM executes Java bytecodes, so Java bytecodes can be thought of as the machine language of the JVM.
+JVM are available for almost all operating systems.
+Java byte code is executed by using any operating system’s JVM. Thus achieve portability.
+Java Runtime Environment (JRE)
+The Java Virtual Machine is a part of a large system i.e. Java Runtime Environment (JRE).
+Each operating system and CPU architecture requires different JRE.
+The JRE consists of set of built-in classes, as well as a JVM.
+Without an available JRE for a given environment, it is impossible to run Java software.
+Phases of Java program
+Java program normally go through five phases:
+Phase 1: Creating a Program
+This phase consists of editing a file with an editor program, normally known as editor.
+You type a Java program using this editor and save the program on secondary storage(Hard drive).
+Note: All file names ending with the .java extension indicates that these files are java files.
+Phase 2:  Compiling a Java Program
+In Phase 2, the programmer gives the command javac to compile the program. The java compiler translates the java program into byte codes, which is the language understood by the java interpreter. To compile a program called Welcome.java type javac Welcome.java at the command window of your system. If the program compiles correctly, a file called Welcome. Class is produced. This is the file containing the byte codes that will be interpreted during the execution phase.
+Phase 3: Loading a program in memory
+In phase 3, the program must first be placed in memory before it can be executed. This is done by the class loader, which takes the .class file (or files) containing the byte codes and transfers it to memory. The .class file can be loaded from a disk on your system or over a network (such as your local university or company network or even the internet). Applications (Programs) are loaded into memory and executed using the java interpreter via the command java. When executing a Java application called Welcome, the command
+Java Welcome Invokes the interpreter for the Welcome application and causes the class loader to load information used in the Welcome program.
+Phase 4: Byte code Verification
+Before the byte codes in an application are executed by the java interpreter, they are verified by the
+byte code verifier in Phase 4. This ensures that the byte codes for class that are loaded form the internet (referred to as downloaded classes) are valid and that they do not violate Java’s security restrictions. Java enforces strong security because java programs arriving over the network should not be able to cause damage to your files and your system (as computer viruses might).
+Phase 5: Executtion
+Finally in phase 5, the computer, under the control of its CPU, interprets the program one byte code at a time. Thus performing the actions specified by the program.Programs may not work on the first try. Each of the preceding phases can fail because of various errors. This would cause the java program to print an error message. The programmer would return to the edit phase, make the necessary corrections and proceed through the remaining phases again to determine if the corrections work properly
+
+
+Installation and Environment Setting
+1. Installation
+Download the latest version java development environment((java 2 standard edition)) from http://java.sun.com.
+2. Note:  j2se also called jdk (java development kit).
+assume that j2se is installed in C:\Program Files (x86)\Java\jdk1.5.0_22.
+How to set Path?
+1. How to set Temporary path for jdk?
+Open the command prompt from Start -> Programs ¬>Accessories ¬> Command Prompt. The command prompt screen would be opened in front of you.
+
+Write the command on the command prompt according to the following format
+ path = < java installation directory\bin >
+
+To Test whether path has been set or not, write javac and press ENTER. If the list of options displayed as shown in the below figure means that you have successfully completed the steps of path setting.
+
+
+Permanent Path Setting:
+In Windows 7 ,you can set the permanent environment variable.
+Right click on computer icon click on properties as shown below 
+
+A System Properties frame would appear as shown in the picture
+
+Select the advanced system settings followed by clicking the Environment Variable button. The Environment variables frame would be displayed in front of you
+
+
+Locate the Path variable in the System or user variables, if it is present there, select it by single click. Press Edit button. The following dialog box would be appeared.
+
+Write; C:\Program Files (x86)\Java\jdk1.5.0_22\bin at the end of the value field. Press OK button. Remember to write semicolon (;) before writing the path for java installation directory as illustrated in the above figure.
+If Path variable does not exist, click the New button. Write variable name “PATH”, variable value C:\Program Files (x86)\Java\jdk1.5.0_22\binand press OK button.
+Now open the command prompt and write javac, press enter button. You see the list of options would be displayed.
+After setting the path permanently, you have no need to set the path for each new opened command prompt.
+First Program in Java
+Like any other programming language, the java programming language is used to create applications. So, we start from building a classical “Hello World” application, which is generally used as the first program for learning any new language.
+public class HelloWorld
+{
+public static void main( String[] args )
+{
+		System.out.println("Hello world");
+}
+} 
+1. To save your program, move to File menu and choose save as option.
+Save your program as “HelloWorld.java” in some directory. Make sure to add double quotes around class name while saving your program. For this example create a folder known as “examples” in E: drive
+
+
+ 
+
+Note: Name of file must match the name of the public class in the file (at line 4). Moreover, it is case sensitive. For example, if your class name is MyClasS, than file name must be MyClasS. Otherwise the Java compiler will refuse to compile the program.
+Java Program:
+A java program can be defined as a set of objects that have methods and instance variables and these objects communicate with each other.
+Object – Objects have states and behaviors. Object oriented programming says that everything in this world is an object .For example, a person have state (name, color,height,nose,ears,hairs etc) and person have behaviors (to eat food, to walk, to run,to see etc).
+Class – A collection of objects with same properties and functions known as class. A class is used to define characteristics of the objects. It is used as a model for creating different objects of same type. For example, a class Person can be used to define characteristics of a person. It can be used to create many objects of type Person such as Ali,Usman ,Amjad etc.
+Instance variables: Each object has its own set of instance variables. Set of all instance variables of an objects is called its state. A class may contain many instance variables. 
+Functions: An object can perform different tasks and actions. The actions that can be performed by an object are known as functions or methods. Methods - A method is basically a behaviour. A class can contain many methods. It is in methods where the logics are written, data is manipulated and all the actions are executed.  A class may contain many mathods. 
+Defining Our First Program:
+public class HelloWorld
+{
+public static void main( String[] args )
+{
+		System.out.println("Hello world");
+}
+} 
+You see in above program “public class HelloWorld”. Here public is access modifier, class is a java keyword and HelloWorld is our java class name. 
+
+You will see the following line of code often: 
+public static void main( String args[] ) { …}
+About main() 
+“main” is the function from which your program starts 
+Why public? 
+Since main method is called by the JVM that is why it is kept public so that it is accessible from outside. Remember private methods are only accessible from within the class
+Why static?
+Every Java program starts when the JRE (Java Run Time Environment) calls the main method of that program. If main is not static then the JRE have to create an object of the class in which main method is present and call the main method on that object (In OOP based languages method are called using the name of object if they are not static). It is made static so that the JRE can call it without creating an object.
+Also to ensure that there is only one copy of the main method per class
+Why void?
+Indicates that main ( ) does not return anything.
+What is String args[] ?
+Way of specifying input (often called command-line arguments) at startup of application.
+Operators
+Simple Assignment Operator
+=       Simple assignment operator
+Arithmetic Operators
++       Additive operator (also used
+        for String concatenation)
+-       Subtraction operator
+*       Multiplication operator
+/       Division operator
+%       Remainder operator
+Unary Operators
++       Unary plus operator; indicates
+        positive value (numbers are 
+        positive without this, however)
+-       Unary minus operator; negates
+        an expression
+++      Increment operator; increments
+        a value by 1
+--      Decrement operator; decrements
+        a value by 1
+!       Logical complement operator;
+        inverts the value of a boolean
+Equality and Relational Operators
+==      Equal to
+!=      Not equal to
+>       Greater than
+>=      Greater than or equal to
+<       Less than
+<=      Less than or equal to
+Conditional Operators
+&&      Conditional-AND
+||      Conditional-OR
+?:      Ternary (shorthand for 
+        if-then-else statement)
+Type Comparison Operator
+instanceof      Compares an object to 
+                a specified type 
+Bitwise and Bit Shift Operators
+~       Unary bitwise complement
+<<      Signed left shift
+>>      Signed right shift
+>>>     Unsigned right shift
+&       Bitwise AND
+^       Bitwise exclusive OR
+|       Bitwise inclusive OR
+
+Data Types: 
+	

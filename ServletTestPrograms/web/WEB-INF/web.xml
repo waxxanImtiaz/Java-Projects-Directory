@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>Hello</servlet-name>
+        <servlet-class>controller.Hello</servlet-class>
+        <init-param>
+            <param-name>cast</param-name>
+            <param-value>wassan</param-value>
+        </init-param>
+    </servlet>
+    <servlet>
+        <servlet-name>NewServlet</servlet-name>
+        <servlet-class>controller.NewServlet</servlet-class>
+        <init-param>
+            <param-name>age</param-name>
+            <param-value>123</param-value>
+        </init-param>
+    </servlet>
+    <servlet>
+        <servlet-name>MyServlet</servlet-name>
+        <servlet-class>controller.MyServlet</servlet-class>
+        <init-param>
+            <param-name>myFile</param-name>
+            <param-value>E:/test.txt</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Hello</servlet-name>
+        <url-pattern>/Hello</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>NewServlet</servlet-name>
+        <url-pattern>/NewServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>MyServlet</servlet-name>
+        <url-pattern>/MyServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            01
+        </session-timeout>
+    </session-config>
+</web-app>

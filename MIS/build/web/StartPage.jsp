@@ -1,0 +1,53 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>SIS DUET</title>
+
+        <link href="css/sis1.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="wrapper1">
+            <div id="header-wrapper">
+                <div id="header" class="container">
+                    </br>
+                    <div id="logo" ><img src="images/logo.png" WIDTH=150 HEIGHT=100 >
+                            </br>
+
+                            <h1><font face="Palatino Linotype, Book Antiqua, Palatino, serif" size="+3" color="#000099" <a href="#">STUDENT INFORMATION SYSTEM (SIS) DUET</a></font></h1>
+                            <span>Dawood University Of Engineerig And Technology Karachi</span> </div> </br>
+                    <div id="menu">
+                        <ul>
+                            <li class="current_page_item"><a href="#" accesskey="1" title="">Login page</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="wrapper3">
+                <div id="portfolio" class="container">
+
+                    <div class="column1">
+                        <div class="box">
+
+
+                            <form action="DBServlet" method = "post">
+                                <h3>Login</h3>
+                                <input type="text" name="username" placeholder="Username" class="text"  required="required" />
+                                <input type="password" name="password" placeholder="Password" class="text"  required="required" />
+                                <input type="submit" value="Login" name="submit" class="submit"  /><br /><br />
+
+                                <a href="#" >Forget password </a><br />
+                            </form>
+                        </div>
+
+                    </div>
+
+                </div>
+        </div>
+
+            </div>
+        <div id="copyright" class="container">
+            <p> Copyright (c) 2015 Powered by: <a href="#">Laghari-Wassan </a></p>
+        </div>
+    </body>
+</html>	

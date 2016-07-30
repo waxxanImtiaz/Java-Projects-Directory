@@ -1,0 +1,42 @@
+<div id="cont">
+    <div id="page">
+                <p class="h3"  class="header" style="cursor: default;">Phases of Java program</p>
+			<p  class="text-justify">
+                            Java program normally go through five phases::<br />
+                        </p> 
+                <p class="h4"  class="header" style="cursor: default;"><b><u>Phase 1:</u> Creating a Program</b></p>
+		<p  class="text-justify">
+                  This phase consists of editing a file with an editor program, normally known as editor.<br />
+                  <br />You type a Java program using this editor and save the program on secondary storage(Hard drive).
+                  <br /><b>Note:</b> All file names ending with the .java extension indicates that these files are java files.     
+                </p>
+                <p class="h4"  class="header" style="cursor: default;"><b><u>Phase 2: </u>  Compiling a Java Program</b></p>
+		<p  class="text-justify">
+                In Phase 2, the programmer gives the command javac to compile the program. 
+                The java compiler translates the java program into byte codes, which is the language understood by the java interpreter.
+                To compile a program called Welcome.java type
+                <b>javac Welcome.java</b> at the command window of your system. 
+                If the program compiles correctly, a file called Welcome. Class is produced. 
+                This is the file containing the byte codes that will be interpreted during the execution phase.
+                </p>
+                <p class="h4"  class="header" style="cursor: default;"><b><u>Phase 3:</u>  Loading a program in memory</b></p>
+		<p  class="text-justify">
+                In phase 3, the program must first be placed in memory before it can be executed. 
+                This is done by the class loader, which takes the .class file (or files) containing the byte codes and transfers it to memory. The .class file can be loaded from a disk on your system or over a network (such as your local university or company network or even the internet). Applications (Programs) are loaded into memory and executed using the java interpreter via the command java. When executing a Java application called Welcome, the command
+                <b>Java Welcome</b> Invokes the interpreter for the Welcome application and causes the class loader to load information used in the Welcome program.  
+                </p>
+                <p class="h4"  class="header" style="cursor: default;"><b><u>Phase 4:</u>  Byte code Verification</b></p>
+		<p  class="text-justify">
+                Before the byte codes in an application are executed by the java interpreter, they are verified by the
+                byte code verifier in Phase 4. This ensures that the byte codes for class that are loaded form the internet (referred to as downloaded classes) are valid and that they do not violate Java’s security restrictions. Java enforces strong security because java programs arriving over the network should not be able to cause damage to your files and your system (as computer viruses might).
+                </p>
+                 <p class="h4"  class="header" style="cursor: default;"><b><u> Phase 5:</u>  Executtion</b></p>
+		<p  class="text-justify">
+                    Finally in phase 5, the computer, under the control of its CPU, interprets the program one byte code at a time. Thus performing the actions specified by the program.Programs may not work on the first try. Each of the preceding phases can fail because of various errors. This would cause the java program to print an error message. The programmer would return to the edit phase, make the necessary corrections and proceed through the remaining phases again to determine if the corrections work properly.<br /><br /><br />
+                </p>
+                
+                 
+    </div>
+ </div>
+  
+

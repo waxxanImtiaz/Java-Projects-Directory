@@ -1,0 +1,16 @@
+SMAP
+Profile_jsp.java
+JSP
+*S JSP
+*F
++ 0 Profile.jsp
+Profile.jsp
++ 1 style.css
+style.css
+*L
+1,10:49
+1#1,15:59
+10#0,5:73
+15,32:79
+46,4:111
+*E

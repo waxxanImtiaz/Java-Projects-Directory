@@ -1,0 +1,17 @@
+#body{
+    color: #f22;
+    font-size: 11pt;
+    font-weight: 400;
+/*    background-image: url(aqlb_search_bar.png);*/
+}
+.row{
+     font-family:  Times New Roman;
+     font-size: 100px;
+}
+
+#table-id{
+   border: solid;
+   border-color: #CCCCCC; 
+   width: 963%;
+   height: 20%;
+}
